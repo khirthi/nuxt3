@@ -5,11 +5,11 @@ const name = `Carnival Name`
 
 // This will be reactive when you change title/description above
 useHead({
-  title,
-  meta: [{
-    name: name,
-    content: description
-  }]
+  title: 'Carnival',
+  meta: [
+    { name: 'description', content: 'This is my carnival description.' },
+    { name: 'keywords', content: 'carnival, Project, Practice'  }
+  ]
 })
 </script>
 
@@ -18,7 +18,6 @@ useHead({
     <Head>
       <Title>{{title}}</Title>
       <H2>Hello world</H2>
-      <Meta name = name :content="description" />
     </Head>
   </div>
 </template>
